@@ -12,8 +12,9 @@ Scanner scan = new Scanner(System.in);
 int numeroUtente;
 System.out.println("Scrivi un numero ");
 numeroUtente=scan.nextInt();
-boolean numeroPari=false;
-if(numeroPari) {
+
+ boolean numeroPari=false;
+if(numeroPari ) {
 	System.out.println();
 	
 }

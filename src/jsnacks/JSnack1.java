@@ -11,22 +11,23 @@ public class JSnack1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] numeroUtente = new int[5];
-		
-Scanner scan = new Scanner(System.in);
 
+		Scanner scan = new Scanner(System.in);
 
+		for (int index = 0; index < numeroUtente.length; index++) {
+			System.out.println("Scrivi un numero  ");
+			numeroUtente[index] = scan.nextInt();
 
-for(int index = 0; index<numeroUtente.length; index++ ) {
-	System.out.println("Scrivi un numero  ");
-	numeroUtente[index] = scan.nextInt();
+		}
+		int sommaUtente = 0;
 
-}
-int sommaUtente=0;
-for( int i=0; i<numeroUtente.length; i++);{
-	System.out.println(numeroUtente[sommaUtente]);
-}
-		
-scan.close();	
+		for (int index = 0; index < numeroUtente.length; index++)
+			;
+		{
+			System.out.println("Totale numeri untente= ");
+		}
+
+		scan.close();
 	}
 
 }
