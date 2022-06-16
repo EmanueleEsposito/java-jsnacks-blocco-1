@@ -1,32 +1,33 @@
-//Il software deve chiedere per 5 volte all’utente di inserire un numero.
-//Il programma stampa la somma di tutti i numeri inseriti.
-//Esegui questo programma in due versioni, con il for e con il while.
-
 package jsnacks;
 
 import java.util.Scanner;
 
+/*
+ * Il software deve chiedere per 5 volte all’utente di inserire un numero. Il programma stampa la
+ * somma di tutti i numeri inseriti. Esegui questo programma in due versioni, con il for e con il
+ * while.
+ */
 public class JSnack1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int[] numeroUtente = new int[5];
-
+		// chiedere all'utente per 5 volte un numero
 		Scanner scan = new Scanner(System.in);
 
-		for (int index = 0; index < numeroUtente.length; index++) {
-			System.out.println("Scrivi un numero  ");
-			numeroUtente[index] = scan.nextInt();
+		int sum = 0;
 
+		// for (int i = 0; i < 5; i++) {
+		// System.out.print("Dimmi un numero: ");
+		// sum += scan.nextInt();
+		// }
+
+		int count = 0;
+		while (count < 5) {
+			System.out.print("Dimmi un numero: ");
+			sum += scan.nextInt();
+			count++;
 		}
-		int sommaUtente = 0;
 
-		for (int index = 0; index < numeroUtente.length; index++)
-			;
-		{
-			System.out.println("Totale numeri untente= ");
-		}
-
+		System.out.println("La somma è " + sum);
 		scan.close();
 	}
 
